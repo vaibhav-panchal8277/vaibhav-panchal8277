@@ -58,10 +58,10 @@ CONTENT = {
     "evals": {
         "command": "$ python -m evals --all",
         "rows": [
-            ("Guardrails safety set", "35/35", "100% precision and recall, 0% false positives"),
-            ("Multi-agent end-to-end suite", "20/20", "Routing 13, tool calls 6, blocked messages 7"),
-            ("Pytest suite", "21/21", "Plus 23/23 backend tests"),
-            ("RAG golden set", "45 Qs", "Faithfulness, answer relevancy, context precision"),
+            ("Guardrails safety set", "35/35", "100% precision and recall, 0% false positives, in two runs"),
+            ("Multi-agent end-to-end suite", "39/40", "97.5% over two runs; intent, tool calls and blocks all 100%"),
+            ("Multi-agent offline tests", "127", "Backend and frontend, plus 23/23 live end-to-end"),
+            ("RAG golden set", "45 Qs", "RAGAS, retrieval hit rate and MRR, refusal accuracy"),
             ("UI element detector, TestGrid", "−85%", "Processing time, with missing-element defects fixed"),
             ("ECA on YOLOv11s-OBB", "+3.8%", "mAP50 on DIOR-R, +4.3% recall, no extra parameters"),
         ],
@@ -85,9 +85,9 @@ CONTENT = {
             "eyebrow": "MULTI-AGENT SYSTEM",
             "title": "MESH Support",
             "summary": "A customer support platform where a LangGraph supervisor routes each query to a "
-            "Billing, Technical or Refunds agent, with NeMo Guardrails on every message in and out "
-            "and Langfuse tracing on every hop.",
-            "nodes": [("Customer", "query"), ("Input rail", "NeMo Guardrails"),
+            "Billing, Technical or Refunds agent. Fail-closed NeMo Guardrails gate every tool call, "
+            "access is checked on the server, and refunds run only on the customer's confirmation.",
+            "nodes": [("Customer", "query"), ("Input rail", "fail-closed, in parallel"),
                       ("Supervisor", "LangGraph router"), ("Specialist", "billing, tech, refunds")],
             "tags": ["Python", "LangGraph", "FastAPI", "MongoDB", "NeMo Guardrails", "Langfuse", "Pytest"],
             "cta": "REPO",
@@ -97,10 +97,10 @@ CONTENT = {
             "eyebrow": "RETRIEVAL AND EVALUATION",
             "title": "RAG system with an evaluation pipeline",
             "summary": "Hybrid search over Pinecone and BM25, fused with Reciprocal Rank Fusion, that falls "
-            "back to keywords when the vector store is down. Answers cite their sources and "
-            "a 45-question RAGAS golden set checks every change.",
+            "back to keywords when the vector store is down. A 45-question golden set scores "
+            "RAGAS, retrieval hit rate, MRR and refusals, and 72 offline tests run in CI.",
             "nodes": [("Documents", "chunked, embedded"), ("Hybrid search", "Pinecone + BM25"),
-                      ("Fusion", "RRF, k = 60"), ("Cited answer", "RAGAS-scored")],
+                      ("Fusion", "RRF, k = 60"), ("Cited answer", "scored, traced")],
             "tags": ["Python", "FastAPI", "React", "LangChain", "Pinecone", "BM25", "RAGAS", "Docker"],
             "cta": "REPO",
         },

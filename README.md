@@ -12,7 +12,7 @@ I work on **CoTester**, TestGrid's AI testing agent: the vision models that read
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/head-results-dark.svg" /><img src="assets/head-results-light.svg" width="100%" alt="01. Results I can reproduce" /></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/results-dark.svg" /><img src="assets/results-light.svg" width="100%" alt="Guardrails safety set 35 of 35: 100% precision and recall, 0% false positives. Multi-agent end-to-end suite 20 of 20. Pytest 21 of 21, plus 23 of 23 backend tests. RAG golden set of 45 questions scored on faithfulness, answer relevancy and context precision. UI element detector at TestGrid: processing time cut by about 85%. ECA on YOLOv11s-OBB: +3.8% mAP50 on DIOR-R." /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/results-dark.svg" /><img src="assets/results-light.svg" width="100%" alt="Guardrails safety set 35 of 35: 100% precision and recall, 0% false positives, in two runs. Multi-agent end-to-end suite 39 of 40 (97.5%) over two runs. 127 automated offline tests, plus 23 of 23 live end-to-end tests. RAG golden set of 45 questions scored on RAGAS, retrieval hit rate, MRR and refusal accuracy. UI element detector at TestGrid: processing time cut by about 85%. ECA on YOLOv11s-OBB: +3.8% mAP50 on DIOR-R." /></picture>
 
 <br />
 
@@ -20,9 +20,9 @@ I work on **CoTester**, TestGrid's AI testing agent: the vision models that read
 
 <a href="https://portfolio-4gke.vercel.app/work/ui-element-vision"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-cotester-dark.svg" /><img src="assets/work-cotester-light.svg" width="100%" alt="01 An in-house vision pipeline for CoTester at TestGrid: replaced a third-party LLM API with models run in-house, with ONNX icon naming and two-pass OCR; element detection about 85% faster. Read the case study." /></picture></a>
 
-<a href="https://github.com/vaibhav-panchal8277/Multi-Agent-Customer-Support-System"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-mesh-dark.svg" /><img src="assets/work-mesh-light.svg" width="100%" alt="02 MESH Support: a LangGraph supervisor routes each query to Billing, Technical or Refunds agents, with NeMo Guardrails and Langfuse tracing. Open the repo." /></picture></a>
+<a href="https://github.com/vaibhav-panchal8277/Multi-Agent-Customer-Support-System"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-mesh-dark.svg" /><img src="assets/work-mesh-light.svg" width="100%" alt="02 MESH Support: a LangGraph supervisor routes each query to Billing, Technical or Refunds agents, with fail-closed NeMo Guardrails gating every tool call, server-side access control and confirmed-only refunds. Open the repo." /></picture></a>
 
-<a href="https://github.com/vaibhav-panchal8277/Production-RAG-System-with-Evaluation"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-rag-dark.svg" /><img src="assets/work-rag-light.svg" width="100%" alt="03 RAG system with an evaluation pipeline: hybrid Pinecone and BM25 search fused with Reciprocal Rank Fusion, cited answers and a 45-question RAGAS golden set. Open the repo." /></picture></a>
+<a href="https://github.com/vaibhav-panchal8277/Production-RAG-System-with-Evaluation"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-rag-dark.svg" /><img src="assets/work-rag-light.svg" width="100%" alt="03 RAG system with an evaluation pipeline: hybrid Pinecone and BM25 search fused with Reciprocal Rank Fusion, cited answers, a 45-question golden set scored on RAGAS, retrieval hit rate, MRR and refusals, and 72 offline tests in CI. Open the repo." /></picture></a>
 
 <a href="https://github.com/vaibhav-panchal8277/examforge"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-examforge-dark.svg" /><img src="assets/work-examforge-light.svg" width="100%" alt="04 ExamForge: turns a syllabus PDF into a question paper from a marks distribution and difficulty, on Ollama or OpenAI. Open the repo." /></picture></a>
 
