@@ -48,6 +48,8 @@ CONTENT = {
         ("linkedin", "LinkedIn", "out"),
         ("medium", "Medium", "out"),
         ("email", "Email", "out"),
+        # Shown under the MESH and RAG cards, not in the top row.
+        ("demo", "Live demo", "out"),
     ],
     "heads": {
         "results": ("01", "Results I can reproduce", "MEASURED, NOT ESTIMATED"),
