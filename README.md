@@ -12,7 +12,7 @@ I work on **CoTester**, TestGrid's AI testing agent: the vision models that read
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/head-results-dark.svg" /><img src="assets/head-results-light.svg" width="100%" alt="01. Results I can reproduce" /></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/results-dark.svg" /><img src="assets/results-light.svg" width="100%" alt="Guardrails safety set 35 of 35: 100% precision and recall, 0% false positives, in two runs. Multi-agent end-to-end suite 39 of 40 (97.5%) over two runs. 127 automated offline tests, plus 23 of 23 live end-to-end tests. RAG golden set of 45 questions scored on RAGAS, retrieval hit rate, MRR and refusal accuracy. UI element detector at TestGrid: processing time cut by about 85%. ECA on YOLOv11s-OBB: +3.8% mAP50 on DIOR-R." /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/results-dark.svg" /><img src="assets/results-light.svg" width="100%" alt="Guardrails safety set 35 of 35: 100% precision and recall, 0% false positives, in two runs. Multi-agent end-to-end suite 39 of 40 (97.5%) over two runs. 137 automated offline tests, plus 23 of 23 live end-to-end tests. RAG golden set of 45 questions scored on RAGAS, retrieval hit rate, MRR and refusal accuracy. UI element detector at TestGrid: processing time cut by about 85%. ECA on YOLOv11s-OBB: +3.8% mAP50 on DIOR-R." /></picture>
 
 <br />
 

@@ -62,7 +62,7 @@ CONTENT = {
         "rows": [
             ("Guardrails safety set", "35/35", "100% precision and recall, 0% false positives, in two runs"),
             ("Multi-agent end-to-end suite", "39/40", "97.5% over two runs; intent, tool calls and blocks all 100%"),
-            ("Multi-agent offline tests", "127", "Backend and frontend, plus 23/23 live end-to-end"),
+            ("Multi-agent offline tests", "137", "Backend and frontend, plus 23/23 live end-to-end"),
             ("RAG golden set", "45 Qs", "RAGAS, retrieval hit rate and MRR, refusal accuracy"),
             ("UI element detector, TestGrid", "−85%", "Processing time, with missing-element defects fixed"),
             ("ECA on YOLOv11s-OBB", "+3.8%", "mAP50 on DIOR-R, +4.3% recall, no extra parameters"),
