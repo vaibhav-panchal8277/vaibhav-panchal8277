@@ -76,7 +76,7 @@ CONTENT = {
             "title": "An in-house vision pipeline for CoTester",
             "summary": "Replaced a third-party LLM API with models we run ourselves, served on FastAPI. "
             "Icon naming in ONNX and two-pass OCR catch elements the first pass missed, "
-            "and image-based element detection runs about 85% faster.",
+            "and image-based element detection time is cut by about 85%.",
             "nodes": [("Screenshot", "web or mobile"), ("Detection", "VLM, YOLO"),
                       ("Text and icons", "two-pass OCR, ONNX"), ("Elements", "role, label, position")],
             "tags": ["Python", "VLM", "YOLO", "ONNX", "OCR", "FastAPI"],
