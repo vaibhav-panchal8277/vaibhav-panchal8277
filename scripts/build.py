@@ -124,11 +124,11 @@ CONTENT = {
                              "Hybrid search", "Prompt engineering", "MCP"]),
         ("Models and APIs", ["OpenAI API", "Groq", "Ollama", "Hugging Face", "VLMs", "Embeddings"]),
         ("Evaluation and safety", ["RAGAS", "NeMo Guardrails", "Langfuse", "Golden sets", "Agent testing"]),
-        ("Backend and deployment", ["Python", "Go", "FastAPI", "AWS EC2", "Nginx", "Pytest"]),
+        ("Backend and deployment", ["Python", "FastAPI", "AWS EC2", "Nginx", "Pytest"]),
         ("ML and vision", ["PyTorch", "TensorFlow", "Scikit-learn", "YOLO", "OpenCV", "ONNX", "OCR"]),
         ("Data and tools", ["MongoDB", "Pinecone", "SQL", "Streamlit", "Git", "Postman", "Selenium Grid"]),
         # Drawn as one full-width row under the grid.
-        ("Familiar", ["Docker", "GitHub Actions", "REST APIs", "JavaScript", "React", "Google Cloud Run",
+        ("Familiar", ["Go", "Docker", "GitHub Actions", "REST APIs", "JavaScript", "React", "Google Cloud Run",
                       "Vercel", "Render", "LangSmith", "Kaggle"]),
     ],
 }
