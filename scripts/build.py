@@ -122,13 +122,14 @@ CONTENT = {
     "toolkit": [
         ("LLMs and agents", ["LangGraph", "LangChain", "Multi-agent", "Tool calling", "RAG", "NLP",
                              "Hybrid search", "Prompt engineering", "MCP"]),
-        ("Models and APIs", ["OpenAI API", "Groq", "Ollama", "VLMs", "HF Transformers", "Embeddings"]),
+        ("Models and APIs", ["OpenAI API", "Groq", "Ollama", "Hugging Face", "VLMs", "Embeddings"]),
         ("Evaluation and safety", ["RAGAS", "NeMo Guardrails", "Langfuse", "Golden sets", "Agent testing"]),
-        ("Backend and deployment", ["Python", "Go", "FastAPI", "REST", "Docker", "AWS EC2", "Nginx",
-                                    "GitHub Actions", "Pytest"]),
+        ("Backend and deployment", ["Python", "Go", "FastAPI", "AWS EC2", "Nginx", "Pytest"]),
         ("ML and vision", ["PyTorch", "TensorFlow", "Scikit-learn", "YOLO", "OpenCV", "ONNX", "OCR"]),
-        ("Data and tools", ["MongoDB", "Pinecone", "SQL", "JavaScript", "React", "Streamlit", "Git",
-                            "Postman", "Selenium Grid"]),
+        ("Data and tools", ["MongoDB", "Pinecone", "SQL", "Streamlit", "Git", "Postman", "Selenium Grid"]),
+        # Drawn as one full-width row under the grid.
+        ("Familiar", ["Docker", "GitHub Actions", "REST APIs", "JavaScript", "React", "Google Cloud Run",
+                      "Vercel", "Render", "LangSmith", "Kaggle"]),
     ],
 }
 
@@ -475,20 +476,23 @@ def build_toolkit():
     col_w = (W - pad * 2 - gap * (cols - 1)) / cols
     chip_h, chip_gap = 28, 8
 
-    def layout(items):
+    def layout(items, width):
         rows, x, placed = 0, 0.0, []
         for item in items:
             w = measure(item, "sans", 500, 13.5) + 22
-            if x and x + w > col_w:
+            if x and x + w > width:
                 rows, x = rows + 1, 0.0
             placed.append((item, x, rows, w))
             x += w + chip_gap
         return placed, rows + 1
 
-    groups = [(name, *layout(items)) for name, items in CONTENT["toolkit"]]
-    row_heights = []
-    for r in range(0, len(groups), cols):
-        row_heights.append(max(30 + n * (chip_h + chip_gap) for _, _, n in groups[r:r + cols]))
+    # Groups fill a 3-column grid; a group left alone on the last row spans the full width.
+    items_ = CONTENT["toolkit"]
+    grid_rows = [items_[r:r + cols] for r in range(0, len(items_), cols)]
+    full_w = W - pad * 2
+    rows_laid = [[(name, *layout(items, full_w if len(row) == 1 else col_w)) for name, items in row]
+                 for row in grid_rows]
+    row_heights = [max(30 + n * (chip_h + chip_gap) for _, _, n in row) for row in rows_laid]
     H = pad + sum(row_heights) + 26 * (len(row_heights) - 1) + pad - 6
     label = "Toolkit. " + ". ".join(f"{n}: {', '.join(i)}" for n, i in CONTENT["toolkit"])
     for mode, p in PALETTES.items():
@@ -497,7 +501,7 @@ def build_toolkit():
                 f'stroke="{p["line"]}" stroke-width="1.5"/>')
         y0 = pad
         for r, rh in enumerate(row_heights):
-            for c, (name, placed, _) in enumerate(groups[r * cols:(r + 1) * cols]):
+            for c, (name, placed, _) in enumerate(rows_laid[r]):
                 gx = pad + c * (col_w + gap)
                 svg.text(gx, y0 + 12, name.upper(), "mono", 600, 11.5, p["alt"], spacing=1.6)
                 for item, x, row, w in placed:
