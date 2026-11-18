@@ -32,7 +32,7 @@ I work on **CoTester**, TestGrid's AI testing agent: the vision models that read
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/head-toolkit-dark.svg" /><img src="assets/head-toolkit-light.svg" width="100%" alt="03. Toolkit" /></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/toolkit-dark.svg" /><img src="assets/toolkit-light.svg" width="100%" alt="LLMs and agents: LangGraph, LangChain, multi-agent systems, tool calling, RAG, NLP, hybrid search, prompt engineering, MCP. Models and APIs: OpenAI API, Groq, Ollama, VLMs, Hugging Face Transformers, embeddings. Evaluation and safety: RAGAS, NeMo Guardrails, Langfuse, golden sets, agent testing. Backend: Python, Go, FastAPI, REST, Docker, AWS EC2, Nginx, GitHub Actions, Pytest. ML and vision: PyTorch, TensorFlow, Scikit-learn, YOLO, OpenCV, ONNX, OCR. Data and tools: MongoDB, Pinecone, SQL, JavaScript, React, Streamlit, Git, Postman, Selenium Grid." /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/toolkit-dark.svg" /><img src="assets/toolkit-light.svg" width="100%" alt="LLMs and agents: LangGraph, LangChain, multi-agent systems, tool calling, RAG, NLP, hybrid search, prompt engineering, MCP. Models and APIs: OpenAI API, Groq, Ollama, Hugging Face, VLMs, embeddings. Evaluation and safety: RAGAS, NeMo Guardrails, Langfuse, golden sets, agent testing. Backend and deployment: Python, Go, FastAPI, AWS EC2, Nginx, Pytest. ML and vision: PyTorch, TensorFlow, Scikit-learn, YOLO, OpenCV, ONNX, OCR. Data and tools: MongoDB, Pinecone, SQL, Streamlit, Git, Postman, Selenium Grid. Familiar: Docker, GitHub Actions, REST APIs, JavaScript, React, Google Cloud Run, Vercel, Render, LangSmith, Kaggle." /></picture>
 
 <br />
 
