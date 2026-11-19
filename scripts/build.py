@@ -63,7 +63,7 @@ CONTENT = {
             ("Guardrails safety set", "35/35", "100% precision and recall, 0% false positives, in two runs"),
             ("Multi-agent end-to-end suite", "39/40", "97.5% over two runs; intent, tool calls and blocks all 100%"),
             ("Multi-agent offline tests", "137", "Backend and frontend, plus 23/23 live end-to-end"),
-            ("RAG golden set", "45 Qs", "RAGAS, retrieval hit rate and MRR, refusal accuracy"),
+            ("RAG golden set", "45 Qs", "RAGAS with a separate judge model, hit rate, MRR, refusals"),
             ("UI element detector, TestGrid", "−85%", "Processing time, with missing-element defects fixed"),
             ("ECA on YOLOv11s-OBB", "+3.8%", "mAP50 on DIOR-R, +4.3% recall, no extra parameters"),
         ],
@@ -91,7 +91,7 @@ CONTENT = {
             "access is checked on the server, and refunds run only on the customer's confirmation.",
             "nodes": [("Customer", "query"), ("Input rail", "fail-closed, in parallel"),
                       ("Supervisor", "LangGraph router"), ("Specialist", "billing, tech, refunds")],
-            "tags": ["Python", "LangGraph", "FastAPI", "MongoDB", "NeMo Guardrails", "Langfuse", "Pytest"],
+            "tags": ["Python", "LangGraph", "FastAPI", "MongoDB", "Groq", "NeMo Guardrails", "Langfuse", "Pytest"],
             "cta": "REPO",
         },
         {
@@ -104,7 +104,7 @@ CONTENT = {
             "offline tests run in CI.",
             "nodes": [("Documents", "chunked, embedded"), ("Hybrid search", "Pinecone + BM25"),
                       ("Fusion", "RRF, k = 60"), ("Cited answer", "scored, traced")],
-            "tags": ["Python", "FastAPI", "React", "LangChain", "Pinecone", "BM25", "RAGAS", "Docker"],
+            "tags": ["Python", "FastAPI", "React", "LangChain", "Groq", "Pinecone", "BM25", "RAGAS", "Docker"],
             "cta": "REPO",
         },
         {
