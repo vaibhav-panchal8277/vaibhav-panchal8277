@@ -100,7 +100,8 @@ CONTENT = {
             "title": "RAG system with an evaluation pipeline",
             "summary": "Hybrid search over Pinecone and BM25, fused with Reciprocal Rank Fusion, that falls "
             "back to keywords when the vector store is down. A 45-question golden set scores "
-            "RAGAS, retrieval hit rate, MRR and refusals, and 72 offline tests run in CI.",
+            "RAGAS (with a separate judge model), retrieval hit rate, MRR and refusals, and 72 "
+            "offline tests run in CI.",
             "nodes": [("Documents", "chunked, embedded"), ("Hybrid search", "Pinecone + BM25"),
                       ("Fusion", "RRF, k = 60"), ("Cited answer", "scored, traced")],
             "tags": ["Python", "FastAPI", "React", "LangChain", "Pinecone", "BM25", "RAGAS", "Docker"],
