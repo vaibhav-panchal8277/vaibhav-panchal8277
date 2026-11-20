@@ -26,7 +26,7 @@ I work on **CoTester**, TestGrid's AI testing agent: the vision models that read
 <a href="https://github.com/vaibhav-panchal8277/Production-RAG-System-with-Evaluation"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-rag-dark.svg" /><img src="assets/work-rag-light.svg" width="100%" alt="03 RAG system with an evaluation pipeline: hybrid Pinecone and BM25 search fused with Reciprocal Rank Fusion, cited answers, a 45-question golden set scored on RAGAS with a separate judge model, retrieval hit rate, MRR and refusals, and 72 offline tests in CI. Open the repo." /></picture></a>
 <a href="https://production-rag-system-with-evaluati-nine.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-demo-dark.svg" /><img src="assets/link-demo-light.svg" width="152" alt="Live demo of the RAG system" /></picture></a>
 
-<a href="https://github.com/vaibhav-panchal8277/examforge"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-examforge-dark.svg" /><img src="assets/work-examforge-light.svg" width="100%" alt="04 ExamForge: turns a syllabus PDF into a question paper from a marks distribution and difficulty, on Ollama or OpenAI. Open the repo." /></picture></a>
+<a href="https://github.com/vaibhav-panchal8277/examforge"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-examforge-dark.svg" /><img src="assets/work-examforge-light.svg" width="100%" alt="04 ExamForge: turns a syllabus PDF into a question paper from a marks distribution and difficulty, on Ollama or OpenAI, with sandboxed PDF parsing, prompt-injection fencing, optional MongoDB accounts and 150 tests in CI. Open the repo." /></picture></a>
 
 <br />
 

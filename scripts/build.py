@@ -112,11 +112,11 @@ CONTENT = {
             "eyebrow": "LLM TOOLING",
             "title": "ExamForge",
             "summary": "Turns a syllabus PDF into a question paper from a custom marks distribution and "
-            "difficulty. Runs offline on Ollama or on OpenAI through one client, and exports "
-            "the paper as a PDF.",
+            "difficulty, on Ollama or OpenAI. Uploads are parsed in a sandbox, syllabus text is "
+            "fenced against prompt injection, and 150 tests run in CI.",
             "nodes": [("Syllabus", "PDF upload"), ("Topics", "found by the LLM"),
                       ("Questions", "marks, difficulty"), ("Paper", "PDF export")],
-            "tags": ["Python", "Streamlit", "OpenAI API", "Ollama", "ReportLab"],
+            "tags": ["Python", "Streamlit", "OpenAI API", "Ollama", "MongoDB", "ReportLab", "Docker"],
             "cta": "REPO",
         },
     ],
